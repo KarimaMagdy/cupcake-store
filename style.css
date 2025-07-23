@@ -1,47 +1,104 @@
-*{
-    padding: 0%;
-     margin: 0%;
-    }
-.container{
-     display: flex;
-      gap: 2px;
-       background-color: white;
-    }
-.container div{ 
-    width: 200px;
-     height: 100px;
-      background-color: blueviolet;
-    }
-@media(max-width:1000){
-    .container{
-    flex-wrap: wrap;
-}
-.container div{
-    width: 50%;
-}
-.on1{
-    /* display: none; */
-}
-}
-@media(min-width:600px) and (max-width:992px){
-    .container{
-        flex-wrap: wrap;
-    }
-    .container div{
-        width: 49%;
-        background-color: green;
-    }
-    @media(max-width:992) and (max-width:1000){
-        .container{
-            flex-wrap: wrap;
+  *{margin: 0px;padding: 0px;box-sizing: border-box;font-family:cursive;}
+        .topnav{
+            width: 100%;height: 25px;background-color: palevioletred;display: flex;justify-content: space-between;align-items: center;padding: 10px;padding-top: 40px;flex-wrap: nowrap;
         }
-        .container div{
-            width: 49%;
-            background-color: orange;
+        .logo{
+            height: 120px;width: 120px;justify-content: center;align-items: center;margin-left: 230px;margin-top: 10px;
         }
-    }
-    .on1{
-        /* display: none; */
-    }
-
-}
+        .menu{
+            width: 100%;display: flex;justify-content: right;list-style: none;margin-right: 110px;flex-wrap: wrap;
+        }
+        .menu li{
+            margin: 0px;
+        }
+        .menu li a{
+            font-size: 20px;color: lightpink;text-decoration: none;padding-right: 20px;
+        }
+        .menu li a:hover{
+            color:maroon;
+        }
+        .search{
+            display: flex;align-items: center;margin-left: 30px;
+        }
+        .search input{
+            border-radius: 50px;border: none;width: 250px;height: 25px;padding: 10px;margin: 20px;
+        }
+        .search button{
+            border-radius: 50px;border: none;padding:5px;font-size: 15px;background-color: lightpink;cursor: pointer;
+        }
+        .search button:hover{
+            background-color:maroon ;
+        }
+        .bottomnav{
+            width: 100%;height: 50px;background-color: palevioletred; padding: 55px;padding-bottom: 30px;overflow: hidden;
+        }
+        .categories{
+            width: 100%;display: flex;justify-content: center;list-style:  none;flex-wrap: nowrap;
+        }
+        .categories li{
+            margin-left: 60px;
+        }
+        .categories li a{
+            font-size: 20px;color: lightpink;text-decoration: none;
+        }
+        .categories li a:hover{
+            color: maroon;
+        }
+        .cupcakes{
+            display: flex;justify-content: center;flex-wrap: wrap;padding-top: 30px;background-color:lightpink ;
+        }
+        .cupcake{
+            border-radius: 10px;padding: 30px;margin: 25px;text-align: center;width: 310px;box-shadow: 0px 0px 10px rgb(173, 122, 122);background-color: whitesmoke;cursor: pointer;
+        }
+        .cupcake p{
+            margin-top: 10px;
+        }
+        .cupcake img{
+            width: 100%;height:auto;border-radius: 5px;padding: 5px;
+        }
+        .cupcake button{
+            background-color: lightcoral;border:none;border-radius: 10px;padding: 5px;cursor: pointer;
+        }
+        .cupcake button:hover{
+            background-color: rgb(214, 111, 111);
+        }
+        .cupcakes ul{
+            list-style: none;display: flex;justify-content: center;align-items: center;padding-top: 10px;padding-bottom: 10px;
+        }
+        .fa-sharp{
+            margin: 3px;color:gold
+        }
+        .one{
+            background-color:whitesmoke;padding: 5px;
+        }
+        .footer{
+            display: flex;flex-wrap: wrap;background-color: palevioletred;padding-top: 10px;padding-left: 50px;
+        }
+        .links {
+            width: 40%;
+        }
+        .links ul{
+            list-style: none;
+        }
+        .footer h4{
+            margin-bottom: 10px;font-size:20px ;color: maroon;
+        }
+        .links a{
+            font-size:18px ;text-decoration: none;margin-bottom: 10px;color: lightpink;cursor: pointer;
+        }
+        .media a{
+            text-decoration: none;margin-right: 20px;font-size: 18px;color: lightpink;cursor: pointer;
+        }
+        .media a:hover, .links a:hover{
+            color:rgb(250, 149, 165);
+        }
+        .logotwo{
+            height: 120px;width: 120px;margin-left: 300px;cursor: pointer;
+        }
+        .footer p{
+            color:maroon;text-align: center;justify-content: center;width: 100%;font-weight: bolder;margin-bottom: 15px;
+        }
+   
+         
+        
+         
