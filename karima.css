@@ -1,0 +1,47 @@
+*{
+    padding: 0%;
+     margin: 0%;
+    }
+.container{
+     display: flex;
+      gap: 2px;
+       background-color: white;
+    }
+.container div{ 
+    width: 200px;
+     height: 100px;
+      background-color: blueviolet;
+    }
+@media(max-width:1000){
+    .container{
+    flex-wrap: wrap;
+}
+.container div{
+    width: 50%;
+}
+.on1{
+    /* display: none; */
+}
+}
+@media(min-width:600px) and (max-width:992px){
+    .container{
+        flex-wrap: wrap;
+    }
+    .container div{
+        width: 49%;
+        background-color: green;
+    }
+    @media(max-width:992) and (max-width:1000){
+        .container{
+            flex-wrap: wrap;
+        }
+        .container div{
+            width: 49%;
+            background-color: orange;
+        }
+    }
+    .on1{
+        /* display: none; */
+    }
+
+}
